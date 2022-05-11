@@ -1,0 +1,183 @@
+/* reset */
+body, h2, h3, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3 {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.ir {
+  overflow: hidden;
+  border: 0;
+  position: absolute;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+
+/* layout */
+.wrap {
+  max-width: 1800px;
+  margin: 100px auto;
+  padding: 0 40px;
+}
+
+.wrap-inside {
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.location {
+  width: 320px;
+  padding: 30px;
+  flex-shrink: 0;
+  background-image: url(./images/sidebar-background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrap-location {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contents {
+  background-color: white;
+  flex-grow: 1;
+  padding: 30px;
+}
+
+.coffee {
+  margin-bottom: 30px;
+}
+
+.wrap-header {
+  display: flex;
+  color: #999;
+  justify-content: space-between;
+  border-bottom: 14px solid #ddd;
+}
+
+/* design */
+body {
+  background: url(./images/background.png);
+}
+
+/* location */
+.location-title {
+  margin-top: auto;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  border-bottom: 16px solid rgba(255, 255, 255, 0.2);
+}
+
+.location-icon img {
+  vertical-align: bottom;
+  width: 130px;
+}
+
+.location-detail {
+  color: #999;
+  padding: 20px 0;
+  line-height: 1.5;
+}
+
+.location-link {
+  display: block;
+  text-align: center;
+  letter-spacing: 0.2em;
+  padding: 10px 0;
+  margin-bottom: 10px;  
+  font-weight: bold;
+}
+
+.location-link.blue {
+  color: #fff;
+  background-color: dodgerblue;
+}
+
+.location-link.gray {
+  color: #666;
+  background-color: #ddd;
+}
+
+/* main */
+.header-title {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.header-link {
+  background-color: #ddd;
+  margin: auto 0;
+  padding: 2px 10px;
+  border-radius: 15px;
+}
+
+.coffee .grid {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.coffee .grid-items {
+  width: 200px;
+}
+
+.coffee .grid-items-cover {
+  position: relative;
+  padding-top: 100%;
+}
+
+.grid-items-cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviews .grid {
+  min-height: 400px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews .grid-items {
+  width: 372px;
+  padding: 30px;
+  border-radius: 10px;
+  color: #666;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-Writer {
+  text-align: right;
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+}
